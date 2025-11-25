@@ -1,0 +1,44 @@
+.button {
+  display: inline-block;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: "Raleway", system-ui, sans-serif;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.button.secondary {
+  background: var(--gray-200);
+  color: #111;
+}
+.dark .button.secondary {
+  background: #3a3a3a;
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.button:hover {
+  background: var(--primary-dark);
+}
+
+/* Light theme hover */
+.button.secondary:hover {
+  background: var(--gray-100);
+  color: #111; /* Strong contrast on light background */
+}
+
+/* Dark theme hover */
+.dark .button.secondary:hover {
+  background: #404040; /* darker for contrast */
+  color: #ffffff;       /* white text for AAA readability */
+}
+
+.button:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}

@@ -1,0 +1,70 @@
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #111111;
+
+  --primary: #1a73e8;
+  --primary-dark: #185ec2;
+
+  --gray-100: #f2f2f2;
+  --gray-200: #e6e6e6;
+
+  --radius: 8px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+  --shadow-md: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.dark {
+  --bg: #121212;
+  --surface: #1d1d1d;
+  --text: #efefef;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Raleway", system-ui, sans-serif;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 1100px;
+  padding: 32px 24px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-top: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.left-30 {
+  margin-left: 30px;
+}
+/* Unified width container for Cards, Tabs, Buttons */
+.component-block {
+  width: 650px;
+  max-width: calc(100% - 30px);
+  margin-left: 30px;
+  margin-bottom: 2rem;
+}
+
+/* Consistent vertical spacing between elements */
+.section-spacing {
+  margin-bottom: 1.5rem;
+  margin-left: 30px;  
+}
